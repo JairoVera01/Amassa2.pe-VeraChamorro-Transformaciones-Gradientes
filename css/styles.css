@@ -1,0 +1,239 @@
+/*Aplicamos * para aplicarlo al documento en general*/
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header__item{
+    margin: 0px 10px;   
+    font-family: 'Bitter', serif;
+    font-size: 1.4rem;
+    padding-left: 4.5rem;
+    
+}
+
+.header__item a{
+    text-decoration: none; 
+    font-weight: 650; 
+}
+
+.header__item a:hover{
+    text-decoration: none;  
+    color: brown;
+}
+
+.header .header__img{
+    height: 8rem;
+    border-radius: 5rem;    
+}
+
+.hero{
+    height: 70vh;
+    background-image: url("../resources/fondo_hero.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero__contenedor{
+    width: 550px;
+    position: relative;
+    left: 4rem;
+
+}
+
+.hero__titulo{
+    font-family: 'Bitter', serif;
+    color: white ;
+    font-size: 4rem;
+
+}
+
+.btn{
+    font-family: 'Bitter', serif; 
+    font-size: 1.2rem;
+    padding: 12px 35px;
+    border-radius: 7px;
+    border: none;
+}
+
+.complemento__main{
+    background-color: white;
+    padding: 60px 40px;
+    display: flex;
+    font-family: 'Bitter', serif; 
+    color: black;
+    gap: 2.5rem;
+}
+
+.complemento__contenedor{
+    flex-basis: 50%;
+
+}
+
+.complemento__video{
+    width: 100%;
+    border-radius: 18px;
+}
+
+.complemento__parrafo{
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.complemento__contenedor--centrado{
+    align-self: center;
+}
+
+.complemento__audio{
+    width: 100%;
+}
+
+.carta{
+    background-color: white;
+    padding: 10px 40px;
+}
+
+.carta__titulo{
+    text-align: center;
+    font-family: 'Bitter', serif; 
+    font-size: 35px;
+}
+
+.carta__contenedor{
+    display: flex;
+    gap: 20px;
+    font-family: 'Bitter', serif;     
+}
+
+.carta__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.carta_img{
+    width: 100%;
+    border-radius: 12px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.item__titulo{
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.item__parrafo{  
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*Footer*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__item{    
+    font-family: 'Bitter', serif;
+    font-size: 1.4rem;
+    margin-left: 120px;
+    
+}
+
+.footer__item a{
+    text-decoration: none; 
+    font-weight: 650; 
+}
+
+.footer__item a:hover{
+    text-decoration: none;  
+    color: brown;
+}
+
+
+
+/*Productos HTML Aplicando Grids*/
+.grid__general{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.main__img{
+    border-radius: 12px;
+    width: 100%;
+}
+
+.main__derecha, .main__izquierda{
+    padding: 1rem 1.2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.izquierda__parrafo{
+    margin: 10px 0px;
+}
+
+.izquierda__titulo{
+    font-family: 'Bitter', serif;
+}
+.derecha__titulo{
+    font-family: 'Bitter', serif;
+}
+
+.izquierda__parrafo{
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+
+.derecha__parrafo{
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+
+.titulo__productos{
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .main--grid{
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../resources/favicon_amassa2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Amassa2.pe - Contacto</title>
+</head>
+<body>
+    <!--Aplicamos etiqueta semantica para poder seccionar las partes del sitio web-->
+    <header class="header">
+        <!--Pones como link a nuestro logo una etiqueta muerta o podriamos poner una red social o el index si se trabaja de otra pagina html-->
+        <div class="header__contenedor">
+            <a href="#" class="header__link">
+                <img src="../resources/logo_amaasa2.png" alt="amassa.2pe"  class="header__img">
+            </a>
+        </div>
+        <div class="header__contenedor--2">
+            <h2 class="header__titulo">Amassa2.pe</h2>
+        </div>
+        <div class="header__contenedor--3">
+            <span class="header__subtitulo">Hechos en casa con amor ♥</span>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <!--Ingresarmos un nav para la lista no ordenada con el menu principal-->
+        <div class="lista__menu">
+            <nav class="nav__menu">
+                <!--Ingresarmos un nav para la lista no ordenada con el menu principal-->
+                <ul class="nav__lista">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../pages/products.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="../pages/blog.html">Nuestro Blog</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">Acerca De</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+    <hr>
+    <!--Agregamos una seccion para el formulario de contacto-->
+    <section >
+        <form>
+            <fieldset>
+                <!--Agregamos fieldset para generar un cuadro contenedor , un legend como leyenda para el cuadro de formulario-->
+                <!--Agregamos placeholder para ayudar al usuario a conocer lo que tiene que ir dentro de cada area-->
+                <legend>
+                    Formulario de contacto - Amassa2.pe
+                </legend>
+                <h3>Dejanos tus datos...</h3>
+                <label for="nombre_apellido">Tu nombre: </label>
+                <input type="text" name="nombre_apellido">
+                <br><br>
+                <span>Sexo:</span>
+                <br>
+                <!--Generamos los radiobutton con el name sexo para que pertenezcan a un mismo grupo-->
+                <input type="radio" name="sexo">
+                <span>Masculino</span>
+                <input type="radio" name="sexo">
+                <span>Femenino</span>
+                <input type="radio" name="sexo">
+                <span>Otros</span>
+                <br><br>
+                <label for="correo_electronico">Tu correo electronico: </label>
+                <input type="email" name="correo_electronico">
+                <br><br>
+                <label for="consulta">Tu mensaje o consulta: </label>
+                <textarea name="consulta"  cols="18" rows="5" placeholder="Ingresa tu mensaje"></textarea>
+                <br><br>
+                <label for="numero_movil">Tu número móvil: </label>
+                <input type="number" name="numero_movil">
+                <br><br>
+                <span>Pais de contacto</span>
+                <select name="paisDeContacto">
+                    <option value="PE">Peru</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CL">Chile</option>
+                    <option value="EC">Ecuador</option>
+                </select>
+                <br><br>
+                <input type="checkbox" name="aceptar">
+                <span>Acepto terminos y condiciones de servicio</span>
+                <br><br>
+                <input type="submit" value="ENVIAR"> 
+                <input type="reset" name="" id="" value="RESETEAR">
+            </fieldset>
+        </form>
+    </section>
+    <hr>
+    <footer >
+        <h2>Nuestras redes sociales</h2>
+        <div class="lista__menu">
+            <nav class="nav__menu">
+                <!--Ingresarmos un nav para la lista no ordenada con el menu principal-->
+                <ul class="nav__lista">
+                    <li>
+                        <a href="https://www.instagram.com/amassa2.pe/?hl=es" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/amassa2.pe" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/51965816742" target="_blank">WhatsApp</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+    </footer>
+</body>
+</html>
